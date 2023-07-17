@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+
+/* 변수, 연산자, 입력, 출력에 퀴즈
+퀴즈 1번) 원의 반지름과 원주율을 입력하여, 원의 둘레와 원의 면적울 구하는 프로그램을 작성하시오.
+변수: radius, pi, perimeter, area
+
+
+ */
+
+public class Scanner02 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// 입력
+		System.out.println("반지름 입력: ");
+		double radius = sc.nextDouble();
+		System.out.println("원주율 입력: ");
+		double pi = sc.nextDouble();
+		
+		// 원의 둘레, 면적 계산
+		double perimter = 2 * pi * radius;
+		double area = pi * radius * radius;
+		
+		// 출력 화면
+		System.out.println("원의 둘레: " + perimter);
+		System.out.println("원의 면적: " + area);
+		
+		sc.close();
+	}
+
+}

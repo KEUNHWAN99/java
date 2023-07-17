@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+/*
+  퀴즈 2번) 국어, 영어, 수학 점수를 입력하여, 총점과 평균울 구하시오.
+  변수명: kor, eng, mat, sum(정수), ave(실수)
+ */
+
+public class Casting01 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("국어 입력: ");
+		double kor = sc.nextDouble();
+		System.out.println("영어 입력: ");
+		double eng = sc.nextDouble();
+		System.out.println("수학 입력: ");
+		double mat = sc.nextDouble();
+		
+		double sum = kor + eng + mat;
+		double ave = sum / 3;
+		
+		System.out.println("총점: " + sum);
+		System.out.println("평균: " + ave);
+		
+		sc.close();
+		
+
+	}
+	}
+}

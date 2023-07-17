@@ -1,0 +1,18 @@
+
+public class Operator02 {
+	public static void main(String[] args) {
+		// 5. 비트 연산자 - &(비트 AND), |(비트 OR), ^(Exclusive OR, XOR, 배타적OR), ~(비트 NOT)
+		// - 2진수로 연산하는 연산자
+		// &(비트 AND): 두 개 모두다 1일 때 결과가 1이 됨.
+		// |(비트 OR): 둘 중에 하나라도 1이 있으면 결과가 1이 됨
+		// ^(XOR): 둘 중 하나만 1일 때 결과가 1이 됨.
+		// ~(비트 NOT): 1을0으로, 0을 1러 변환함.
+		
+		System.out.println(47 & 73); // 9
+		System.out.println(47 | 73); // 111
+		System.out.println(47 ^ 73); // 102
+		System.out.println(~47); // -48 
+		
+	}
+
+}
